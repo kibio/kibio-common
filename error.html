@@ -9,11 +9,10 @@
     <style>
       
     body {
-      padding-top: 240px;
-      padding-bottom: 40px;
-      background-color: #1e1e1e;
-      color: #777777;
-    }
+        padding-top: 240px;
+        padding-bottom: 40px;
+        background-color: #000000;
+      }
     .btn-primary{
       background-image: linear-gradient(#3FA9F5, #3FA9F5);
     }
@@ -24,34 +23,57 @@
     }
 
 .brand {
-  background-color: #3FA9F5;
+  background-color: black;
 }
+
+.navbar .brand {
+    max-height: 40px;
+    overflow: visible;
+    padding-top: 5;
+    padding-bottom: 0;
+  }
 
 .navbar-inner{
   border-radius:0px;
-  background: #3FA9F5 !important;
+  background: black !important; 
   background-image: none;
   background-repeat: no-repeat;
   filter: none !important;
-  border-top:1px solid #3FA9F5 !important;
-  border-bottom:1px solid #3FA9F5 !important;
+  border-top:1px solid black !important;
+  border-bottom:1px solid black !important;
   border-left:0px !important;
   border-right:0px !important;
 }
 
 .navbar {
   display: block;
+  float: right;
   font-size: 20px;
   font-weight: 200;
   color: #777777;
   text-shadow: 0 1px 0 #ffffff;
 }
 
-nav.li.active {
-  background-color: none;
-  }
+.navbar .nav > li > a, .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+
+  background-color: black !important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  text-shadow: 0 0px 0 #ffffff;
+  color: #555555;
+}
+
+.navbar .nav > li > a {
+    background-color: black !important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+text-shadow: 0 0px 0 #ffffff;
+color: #555555;
+
+}
+
      
-    </style>
+</style>
     
     <link href="./css/bootstrap-responsive.css" rel="stylesheet">
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
@@ -59,27 +81,30 @@ nav.li.active {
   
   <body >
   <div class="navbar navbar-fixed-top">
-   <div class="navbar-inner">
+  <div class="navbar-inner">
      <div class="container">
-        <a class="brand" href="index.html"> <img src="./img/kibio.mark-white.png"></a>
-        <!--
-            <ul class="nav">
+        <a class="brand" href="/"> <img src="./img/kibio.mark-white.png" ></a>
+        
+            <ul class="nav pull-right">
               <li class="active">
-                <a href="#">Player</a>
+                <a href="/">ABOUT</a>
               </li>
               <li>
-                <a href="#faq">FAQ</a>
+                <a href="/">FAQ</a>
               </li>
             </ul>
-            -->
-
-            </div>
-   </div>
+            
+      </div>
+  </div>
  </div>
 
-<p>
-<small>Kibio error page.</small>
-</p>
+ <p>
+  <small>
+Bummer!
+  </small>
+  </p>
+
+
 
     <script src="./js/jquery.js"></script>
     <script src="./js/bootstrap.min.js"></script>
