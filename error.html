@@ -7,13 +7,42 @@
     <link href="./css/bootstrap.css" rel="stylesheet" media="screen">
     
     <style>
+
+    @import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+    /* fontawesome */
+    [class*="fontawesome-"]:before {
+      font-family: 'FontAwesome', sans-serif;
+    }
       
     body {
-      padding-top: 240px;
-      padding-bottom: 40px;
-      background-color: #1e1e1e;
-      color: #777777;
+        padding-top: 240px;
+        padding-bottom: 40px;
+        background-color: #000000;
+      }
+
+
+    .hero-unit {
+    padding: 12px 24px 24px 24px;
+    margin:12px;
+    font-size: 18px;
+     font-weight: 200;
+    line-height: 0px;
+    color: inherit;
+    background-color: #0071BC;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    border-color: #ffffff;
     }
+
+    h3{
+      color:white;
+      margin:0 auto;
+      margin-bottom:10px;
+      font-weight:normal;
+    }
+
     .btn-primary{
       background-image: linear-gradient(#3FA9F5, #3FA9F5);
     }
@@ -21,37 +50,66 @@
       background-image: linear-gradient(#3FA9F5, #3FA9F5);
       color: #ffffff;
       background-color: #3FA9F5;
+      border-color: #ffffff;
+      vertical-align: middle;
     }
 
 .brand {
-  background-color: #3FA9F5;
+  background-color: black;
 }
+
+.navbar .brand {
+    max-height: 40px;
+    overflow: visible;
+    padding-top: 5;
+    padding-bottom: 0;
+  }
 
 .navbar-inner{
   border-radius:0px;
-  background: #3FA9F5 !important;
+  background: black !important; 
   background-image: none;
   background-repeat: no-repeat;
   filter: none !important;
-  border-top:1px solid #3FA9F5 !important;
-  border-bottom:1px solid #3FA9F5 !important;
+  border-top:1px solid black !important;
+  border-bottom:1px solid black !important;
   border-left:0px !important;
   border-right:0px !important;
 }
 
 .navbar {
   display: block;
+  float: right;
   font-size: 20px;
   font-weight: 200;
   color: #777777;
   text-shadow: 0 1px 0 #ffffff;
 }
 
-nav.li.active {
-  background-color: none;
+.navbar .nav > li > a, .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+
+  background-color: black !important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  text-shadow: 0 0px 0 #ffffff;
+  color: #555555;
+}
+
+.navbar .nav > li > a {
+    background-color: black !important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+text-shadow: 0 0px 0 #ffffff;
+color: #555555;
+
+}
+
+  .instructions{
+    text-align: center;
   }
+
      
-    </style>
+</style>
     
     <link href="./css/bootstrap-responsive.css" rel="stylesheet">
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
@@ -59,27 +117,39 @@ nav.li.active {
   
   <body >
   <div class="navbar navbar-fixed-top">
-   <div class="navbar-inner">
+  <div class="navbar-inner">
      <div class="container">
-        <a class="brand" href="index.html"> <img src="./img/kibio.mark-white.png"></a>
-        <!--
-            <ul class="nav">
+        <a class="brand" href="/"> <img src="./img/kibio.mark-white.png" ></a>
+        
+            <ul class="nav pull-right">
               <li class="active">
-                <a href="#">Player</a>
+                <a href="/">ABOUT</a>
               </li>
               <li>
-                <a href="#faq">FAQ</a>
+                <a href="/">FAQ</a>
               </li>
             </ul>
-            -->
-
-            </div>
-   </div>
+            
+      </div>
+  </div>
  </div>
 
-<p>
-<small>Kibio error page.</small>
-</p>
+<div class="container">
+  <div class="hero-unit span4 offset4">
+        <h3>
+          <span class="fontawesome-circle" style="color:#00ADEE;font-size:90%;position:relative;top:-1px;"></span>
+          Bummer!
+        </h3>
+        <h3>
+          We couldn't connect to your device. Sure it's connected?
+        </h3>
+        <div class="tryAgain">
+          <a href="#" class="btn btn-primary btn-large" >TRY AGAIN &hellip;</a>
+        </div>
+      </div>
+</div>
+
+
 
     <script src="./js/jquery.js"></script>
     <script src="./js/bootstrap.min.js"></script>
