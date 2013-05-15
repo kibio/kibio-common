@@ -7,12 +7,42 @@
     <link href="./css/bootstrap.css" rel="stylesheet" media="screen">
     
     <style>
+
+    @import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+    /* fontawesome */
+    [class*="fontawesome-"]:before {
+      font-family: 'FontAwesome', sans-serif;
+    }
       
     body {
         padding-top: 240px;
         padding-bottom: 40px;
         background-color: #000000;
       }
+
+
+    .hero-unit {
+    padding: 12px 24px 24px 24px;
+    margin:12px;
+    font-size: 18px;
+     font-weight: 200;
+    line-height: 0px;
+    color: inherit;
+    background-color: #0071BC;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    border-color: #ffffff;
+    }
+
+    h3{
+      color:white;
+      margin:0 auto;
+      margin-bottom:10px;
+      font-weight:normal;
+    }
+
     .btn-primary{
       background-image: linear-gradient(#3FA9F5, #3FA9F5);
     }
@@ -20,6 +50,8 @@
       background-image: linear-gradient(#3FA9F5, #3FA9F5);
       color: #ffffff;
       background-color: #3FA9F5;
+      border-color: #ffffff;
+      vertical-align: middle;
     }
 
 .brand {
@@ -72,6 +104,10 @@ color: #555555;
 
 }
 
+  .instructions{
+    text-align: center;
+  }
+
      
 </style>
     
@@ -98,11 +134,20 @@ color: #555555;
   </div>
  </div>
 
- <p>
-  <small>
-Bummer!
-  </small>
-  </p>
+<div class="container">
+  <div class="hero-unit span4 offset4">
+        <h3>
+          <span class="fontawesome-circle" style="color:#00ADEE;font-size:90%;position:relative;top:-1px;"></span>
+          Bummer!
+        </h3>
+        <h3>
+          We couldn't connect to your device. Sure it's connected?
+        </h3>
+        <div class="tryAgain">
+          <a href="#" class="btn btn-primary btn-large" >TRY AGAIN &hellip;</a>
+        </div>
+      </div>
+</div>
 
 
 
