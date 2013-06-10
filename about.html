@@ -16,9 +16,8 @@
     }
       
     body {
-        padding-top: 240px;
         padding-bottom: 40px;
-        background-color: #000000;
+        background-color: #1d1d1d;
       }
     .btn-primary{
       background-image: linear-gradient(#00AEEF, #00AEEF);
@@ -47,25 +46,29 @@
     h3{
       color: white;
       margin:0 auto;
-      margin-bottom:10px;
+      margin-bottom:20px;
       font-weight:normal;
     }
 
     h4{
       color: #ffffff;
+      font-size: 18px;
       margin:0 auto;
       margin-bottom:10px;
-      font-weight:normal;
+      font-weight: normal;
+      line-height: 24px;
+
     }
 
 
 .brand {
   background-color: #00AEEF;
-  vertical-align: middle;
+  vertical-align: left;
+  margin-left: -12px;
 }
 
 
-.navbar-inner{
+.navbar .navbar-inner{
   border-radius:0px;
   background: #00AEEF !important; 
   background-image: none;
@@ -75,6 +78,8 @@
   border-bottom:1px solid #00AEEF !important;
   border-left:0px !important;
   border-right:0px !important;
+
+  box-shadow: none;
 }
 
 .navbar {
@@ -84,6 +89,8 @@
   font-weight: 200;
   color: #777777;
   text-shadow: 0 1px 0 #ffffff;
+  border-bottom: 0px;
+  box-shadow: none;
 }
 
 .navbar .brand {
@@ -99,11 +106,18 @@
 
 }
 
-.text {
-  padding-left: 0px;
-  padding-top: 400px;
-  text-align: center;
+.row {
+  margin-left: 0px !important;
 }
+
+.row .text {
+  padding-left: 0px;
+  padding-top: 40px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
 
 .navbar .nav > li > a {
 
@@ -130,7 +144,37 @@
   color: #ffffff;
 
 } 
-     
+
+/* Jumbotrons
+-------------------------------------------------- */
+
+/* Base class
+------------------------- */
+.jumbotron {
+  position: relative;
+  padding: 80px 0;
+  color: #2d2d2d;
+  text-align: left;
+  text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
+  background: #00AEEF; 
+  -webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+     -moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+          box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+}
+.jumbotron h1 {
+  color: #9a9a9a;
+  font-size: 48px;
+  font-weight: normal;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+.jumbotron p {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.25;
+  margin-bottom: 30px;
+}
+
     </style>
     
     <link href="./css/bootstrap-responsive.css" rel="stylesheet">
@@ -152,14 +196,23 @@
                 <a href="/partners.html">Our Partners</a>
               </li>
             </ul>
-        <a class="brand" href="index.html"> <img src="./img/kibio.logo.squarepixels.nobg-01.png" /></a>
-        <div class="tagline pull-left">
-        <h3>Kibio is a simple, ready-to-use tool for digital media.</h3>
-      </div>
+        
           
 </div>
    </div>
  </div>
+
+ <!-- Subhead
+================================================== -->
+<header class="jumbotron subhead" id="overview">
+  <div class="container">
+    <a class="brand" href="index.html"> <img src="./img/kibio.logo.squarepixels.nobg-01.png" /></a>
+        <div class="lead">
+        </br>
+        <h3>Kibio is a simple, ready-to-use tool for digital media.</h3>
+      </div>
+  </div>
+</header>
 
  <div class="container">
 
