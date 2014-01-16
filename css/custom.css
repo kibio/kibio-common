@@ -265,7 +265,7 @@ margin-bottom: 0px;
   .masthead .btn {
     font-size: 24px;
   }
-  h3 {
+  h3, h4 {
     text-align: center;
   }
 }
